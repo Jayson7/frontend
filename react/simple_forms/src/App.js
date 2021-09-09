@@ -22,7 +22,7 @@ export default function App() {
   return (
     <div className="container-fluid bg-dark text-light ">
       <form className="" id="form-overide" onSubmit={handleSubmit}>
-        <h1 className="mt-5 text-center text-center ">Create Account</h1>
+        <h1 className="mt-5 text-center text-center "> Create Account </h1>{" "}
         <div className="form-group">
           <label>
             Email:
@@ -34,9 +34,8 @@ export default function App() {
               onChange={(e) => setEmail(e.target.value)}
               required
             />
-          </label>
+          </label>{" "}
         </div>
-        
         <div className="form-group">
           <label>
             Password:
@@ -48,23 +47,23 @@ export default function App() {
               onChange={(e) => setPassword(e.target.value)}
               required
             />
-          </label>
-        </div>
+          </label>{" "}
+        </div>{" "}
         {/* <label>
-        Country:
-        <select
-          name="country"
-          value={country}
-          onChange={(e) => setCountry(e.target.value)}
-          required
-        >
-          <option key=""></option>
-          {countries.map((country) => (
-            <option key={country}>{country}</option>
-          ))}
-        </select>
-      </label>
- */}
+                    Country:
+                    <select
+                      name="country"
+                      value={country}
+                      onChange={(e) => setCountry(e.target.value)}
+                      required
+                    >
+                      <option key=""></option>
+                      {countries.map((country) => (
+                        <option key={country}>{country}</option>
+                      ))}
+                    </select>
+                  </label>
+             */}{" "}
         <div className="form-check">
           <label>
             <input
@@ -74,11 +73,11 @@ export default function App() {
               onChange={(e) => setAcceptedTerms(e.target.value)}
               required
             />
-            I accept the terms of service
-          </label>
-        </div>
-        <button className="btn btn-success p-2">Submit</button>
-      </form>
+            I accept the terms of service{" "}
+          </label>{" "}
+        </div>{" "}
+        <button className="btn btn-success p-2"> Submit </button>{" "}
+      </form>{" "}
     </div>
   );
 }
